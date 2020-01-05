@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+   --slantedText:'Grand Hotel', cursive;
+   --primaryColor:#698f3f;
+   --secondaryColor:#fca311;
+   --mainDark:#3a3e3b;
+   --mainWhite:#fff;
+   --mainGrey:#e5e5e5;
+   --mainTransitition:all 0.3s
+}
+body{
+    font-family: 'Catamaran', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./images/bannerImage.jpg") no-repeat center/cover;
+    min-height: 100vh;
+    position: relative;
+}
+.banner-subtitle{
+    font-family: var(--slantedText);
+    color: var(--primaryColor);
+    font-size: 2rem;
+    animation: sideRightAnimation 5s ease-in-out 1;
+}
+.banner-title{
+    color: var(--mainWhite);
+    text-transform: uppercase;
+    margin: 32px;
+    font-size: 3rem;
+    animation: sideLeftAnimation 5s ease-in-out 1;
+}
+.banner{
+    position: absolute;
+    text-align: center;
+    letter-spacing: 10px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-btn,.banner-btn{
+    color: var(--mainDark);
+    background: var(--primaryColor);
+    padding: 0.8rem 1.2rem;
+    text-transform: uppercase;
+    outline: 0.2rem solid var(--primaryColor);
+    outline-offset: 0.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    /* transition: var(--mainTransitition); */
+}
+.banner-btn{
+    padding: 1.2rem 1.5rem; 
+    animation: buttonAnimation 5s ease-in-out 1;
+}
+.main-btn:hover,.banner-btn:hover{
+    color:var(--mainWhite)
+}
+
+@keyframes buttonAnimation {
+    0%{
+        /* transform: scale(2); */
+        opacity: 0;
+    }
+    100%{
+            /* transform: scale(1); */
+            opacity: 1;
+    }
+}
+
+@keyframes sideRightAnimation {
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-200px);
+        opacity: 0.5;
+    }
+    75%{
+        transform: translateX(50px);
+        opacity: 0.75;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes sideLeftAnimation {
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(200px);
+        opacity: 0.5;
+    }
+    75%{
+        transform: translateX(-50px);
+        opacity: 0.75;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.content-divider{
+    height: 0.5rem;
+        background: linear-gradient(to left ,var(--secondaryColor), var(--primaryColor),var(--secondaryColor));
+}
+
