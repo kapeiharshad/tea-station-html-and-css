@@ -184,13 +184,13 @@ a {
   }
 }
 
-.about-subtitle {
+.section-subtitle {
   font-family: var(--slantedText);
   color: var(--primaryColor);
   font-size: 2rem;
   letter-spacing: var(--letterSpacing);
 }
-.about-title {
+.section-title {
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -198,7 +198,7 @@ a {
   min-width: 13rem;
   padding: 0 0 0.8rem 0;
 }
-.about {
+.section-center {
   padding: 4rem 0;
   max-width: 1170px;
   margin: 0 auto;
@@ -213,7 +213,7 @@ a {
 .about-info {
   padding: 2rem 0;
 }
-.about-text-container {
+.section-text-container {
   padding-bottom: 2rem;
 }
 .about-picture-container {
@@ -233,6 +233,6 @@ a {
     width: 50%;
   }
   .about-info {
-    padding-left: 2rem;
+    padding-left: 4rem;
   }
 }
