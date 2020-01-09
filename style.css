@@ -195,7 +195,7 @@ a {
   text-transform: uppercase;
 }
 .about-text {
-  min-width: 26rem;
+  min-width: 13rem;
   padding: 0 0 0.8rem 0;
 }
 .about {
@@ -206,7 +206,7 @@ a {
 }
 .about-image {
   width: 100%;
-  /* display: block; */
+  display: block;
   transition: var(--mainTransitition);
 }
 
@@ -217,7 +217,7 @@ a {
   padding-bottom: 2rem;
 }
 .about-picture-container {
-  /* background: var(--primaryColor); */
+  background: var(--primaryColor);
   border: 0.5rem solid var(--primaryColor);
   border-radius: 1rem;
   overflow: hidden;
@@ -227,10 +227,12 @@ a {
   transform: scale(1.1);
 }
 @media screen and (min-width: 992px) {
-  .about-image,
+  .about-picture-container,
   .about-info {
     float: left;
     width: 50%;
-    padding: 2rem;
+  }
+  .about-info {
+    padding-left: 2rem;
   }
 }
