@@ -236,3 +236,27 @@ a {
     padding-left: 4rem;
   }
 }
+.product {
+  background: var(--mainDark);
+}
+.products-inventory {
+  padding: 4rem 0;
+}
+.product-img {
+  width: 100%;
+  display: block;
+  transition: var(--mainTransitition);
+}
+@media screen and (min-width: 992px) {
+  .product-info,
+  .products-inventory {
+    float: left;
+  }
+
+  .product-info {
+    width: 25%;
+  }
+  .products-inventory {
+    width: 25%;
+  }
+}
