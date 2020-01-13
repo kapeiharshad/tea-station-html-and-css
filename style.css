@@ -336,3 +336,25 @@ a {
     padding: 2rem 2rem;
   }
 }
+
+.footer {
+  background: var(--mainDark);
+  text-align: center;
+}
+.social-icons {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.social-icon {
+  color: var(--mainWhite);
+  padding-right: 2rem;
+}
+.footer-text {
+  color: var(--mainWhite);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.social-icon:hover {
+  color: var(--primaryColor);
+  transition: var(--mainTransitition);
+}
