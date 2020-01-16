@@ -32,6 +32,7 @@ a {
 }
 .nav-btn {
   position: fixed;
+  cursor: pointer;
   z-index: 1;
   top: 0;
   left: 0;
@@ -62,6 +63,7 @@ a {
   padding-top: 1rem;
   padding-left: 2rem;
   transition: var(--mainTransitition);
+  transform: translateX(-100%);
 }
 .nav-close {
   font-size: 2rem;
@@ -85,6 +87,9 @@ a {
     width: 30vw;
     max-width: 20rem;
   }
+}
+.showNav {
+  transform: translateX(0%);
 }
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
